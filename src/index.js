@@ -40,7 +40,7 @@ function updateWeatherData(data) {
   tempElement.innerHTML = Math.round(data.main.temp) + " &deg;с";
   cityElement.innerHTML = data.name;
   humidityElement.innerHTML = data.main.humidity + " %";
-  windElement.innerHTML = data.wind.speed + " км/ч";
+  windElement.innerHTML = data.wind.speed + " км/г";
 }
 
 function updateWeatherImage(weather) {
