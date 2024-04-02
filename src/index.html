@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="/src/css/styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search-bar">
+        <input type="text" class="input" placeholder="Введите город" />
+        <button class="btn">Искать</button>
+      </div>
+      <div class="error">
+        <p>Invalid city name</p>
+      </div>
+      <div class="weather">
+        <h1 class="title">Прогноз погоды на день</h1>
+        <img class="weather-image" src="/images/default1.png" alt="" />
+        <h2 class="temp"></h2>
+        <p class="city"></p>
+        <div class="button">
+          <div class="left-details">
+            <img src="/images/humidity.png" alt="" class="left-logo" />
+            <div class="okey">
+              <h3 class="humidity-no"></h3>
+              <p class="humidity">Влажность</p>
+            </div>
+          </div>
+          <div class="right-details">
+            <img src="/images/wind.png" alt="" class="right-logo" />
+            <div class="okey">
+              <h3 class="wind-no"></h3>
+              <p class="wind">Скорость ветра</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="./index.js"></script>
+  </body>
+</html>
